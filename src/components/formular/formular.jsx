@@ -7,6 +7,7 @@ export const BookingForm = () => {
     const [guests, setGuests] = useState(1);
     const [mealPlan, setMealPlan] = useState('none');
     const [extraBed, setExtraBed] = useState(false);
+    const [pet, setPet] = useState(false);
     const [invalidEnter, setInvalidEnter] = useState(false);
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState(1);
@@ -17,7 +18,6 @@ export const BookingForm = () => {
       // TODO: přidat logiku odeslání
       console.log('Form submitted');
     } 
-};
 
 return (
     <form onSubmit={handleSubmit}>
@@ -106,6 +106,7 @@ return (
         </label>
       </div>
 
+      <div>
         <label>Email:
         <input
           type="text"
@@ -115,18 +116,21 @@ return (
           required
         />
         </label>
+        </div>
 
+        <div>
         <label>Telefon:
         <input
-          type="number"
+          type="tel"
           id="phone"
-          value={phone}
-          onChange={(e) => setPhone(e.target.value)}
+            placeholder="+420 123 456 789"
+            pattern="^\+?[0-9\s\-]{7,15}$"
           required
         />
         </label>
+        </div>
 
       <button type="submit">Odeslat poptávku</button>
     </form>
   );
-
+};
