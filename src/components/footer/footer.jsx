@@ -1,7 +1,6 @@
 import React from 'react';
-import './style.css';
 
-export const footer = () => (
+export const Footer = () => {(
 <section className="dark">
     <div className="container columns-2">
       <div className="columns">
@@ -17,3 +16,4 @@ export const footer = () => (
     </div>
 </section>
 )
+}

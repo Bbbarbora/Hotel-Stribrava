@@ -20,6 +20,7 @@ export const BookingForm = () => {
     } 
 
 return (
+<section className='light'>
     <form onSubmit={handleSubmit}>
       <div>
         <label>Od:
@@ -132,5 +133,6 @@ return (
 
       <button type="submit">Odeslat poptávku</button>
     </form>
+    </section>
   );
 };

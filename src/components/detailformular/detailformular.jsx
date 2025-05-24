@@ -1,18 +1,21 @@
 import React from 'react';
+import './detailformular.css'
 
-
-export const detailFormular = () => (
+export const DetailFormular = () => (
+  <section className='light'>
     <div className="container">
-    <h2>Heading</h2>
+    <h2>Pokoj Luxus</h2>
     <div className="columns-2">
       <div className="column">
-        <img src="img/image1.svg" />
+        <img className="container__image" alt="luxus" src="src/components/DetailFormular/imgdetailform/pokoj05.jpg" />
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque accusantium, dolor quisquam doloremque quod nobis temporibus ducimus sapiente consectetur distinctio assumenda, nisi suscipit saepe. Vero.
+        Pro nejnáročnější hosty máme připravený prostorný pokoj s exkluzivním vybavením v prvorepublikovém stylu. Tento pokoj má nejlepší výhled na řeku Stříbravu i na okolní krajinu. Tento pokoj skvělou volbou pro ty, kteří hledají vrcholný komfort a luxusní zážitek během svého pobytu v našem zrekonstruovaném hotelu. 
         </p>
       </div>
     </div>
 </div>
+</section>
 );
 
 // doplnit propojení na texty a obrázky z pokojů, jak bude mít Barča hotovo
+
