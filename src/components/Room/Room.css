@@ -1,0 +1,46 @@
+.card {
+  background-color: #131e2a;
+  border-radius: 0.75rem;
+  box-shadow: 0 3px 8px rgb(0 0 0 / 0.12);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  color: #e8e9f3; 
+}
+
+.card:hover,
+.card--selected {
+  color: #e8e9fe;
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgb(0 0 0 / 0.2);
+}
+
+.card__image {
+  width: 100%;
+  aspect-ratio: 4 / 3; 
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0.75rem 0.75rem 0 0;
+  transition: border 0.25s ease;
+}
+
+.card:hover img,
+.card--selected img {
+  border: 2px solid #e8e9f3;;
+}
+
+.card__title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 0.75rem 1rem 0.25rem;
+  color: inherit; /* zachová farbu z card */
+}
+
+.card__body {
+  padding: 0 1rem 1rem;
+  font-size: 1rem;
+  color: #555;
+  flex-grow: 1;
+}

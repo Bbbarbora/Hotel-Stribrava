@@ -1,0 +1,56 @@
+.dark {
+  background-color: #131e2a;
+  color: white;
+}
+
+.dark a {
+  color: white;
+}
+
+/* Custom scrollbar for dark sections */
+.dark *::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.dark *::-webkit-scrollbar-track {
+  background: black;
+  border-radius: 0.5rem;
+}
+
+.dark *::-webkit-scrollbar-button {
+  display: none;
+}
+
+.dark *::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 0.5rem;
+}
+
+.dark *::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.container {
+  width: 100vw;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+@media screen and (min-width: 740px) {
+  .container {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+section {
+  padding: 2rem 0;
+}
+
+.cards-row {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto; /* Allows horizontal scrolling if cards exceed container width */
+  overflow-y: hidden;
+  padding: 1rem 0;
+}

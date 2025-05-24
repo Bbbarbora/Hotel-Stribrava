@@ -1,13 +1,14 @@
 import './style.css';
+import { Header } from '../../components/header/header';
+import { Rooms } from '../../components/Rooms/rooms';
+
 
 export const HomePage = () => {
   return (
     <div className="container">
-      <header>
-        <div className="logo" />
-        <h1>React webová aplikace</h1>
-      </header>
+      <Header />
       <main>
+        <Rooms />
         <p>
           Startovací šablona pro webovou aplikaci v Reactu. Vytvořeno pomocí
           {" "}
