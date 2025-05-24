@@ -1,6 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-export const Footer = () => {(
+export const Footer = () => {
+return (
 <section className="dark">
     <div className="container columns-2">
       <div className="columns">
@@ -12,7 +13,7 @@ export const Footer = () => {(
       <div className='email'>
         <p>recepce@hotelstribrava.cz</p>
       </div>
-      <img src="imgfooter/mapa.png" />
+      <img src={mapa} alt="Kde nás najdete" />
     </div>
 </section>
 )
